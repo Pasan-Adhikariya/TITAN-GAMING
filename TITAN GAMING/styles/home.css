@@ -1,0 +1,718 @@
+/* Latest Games Section */
+.latest-games {
+    padding: 40px 20px;
+    text-align: center;
+    background: #2d2d2d;
+    color: #fff;
+  }
+  
+  .latest-games h2 {
+    margin-bottom: 20px;
+    color: #ffa500;
+  }
+  
+  .games-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .game-card {
+    background: #555;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 150px;
+    transition: transform 0.2s ease;
+  }
+  
+  .game-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .game-card img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section Main Wrapper */
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Hero Background */
+  .hero-bg {
+    background: url('https://source.unsplash.com/1600x900/?games,technology') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  /* Overlay for Contrast */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  }
+  
+  /* Particle Canvas */
+  .particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    z-index: 2;
+    max-width: 700px;
+    color: #fff;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Dynamic Typing Animation */
+  .dynamic-text {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(20) 1 forwards, blink 1s step-end infinite;
+  }
+  
+  .hero-subheading {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* CTA with Modern Glow Effect */
+  .cta-button {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px #ffa500, 0 0 20px #ffa500;
+  }
+  
+  /* Typing Keyframes */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-right: 2px solid #fff;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dynamic-text {
+      font-size: 2.2rem;
+    }
+  
+    .hero-subheading {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+ /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section Main Wrapper */
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Hero Background */
+  .hero-bg {
+    background: url('https://source.unsplash.com/1600x900/?games,technology') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  /* Overlay for Contrast */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  }
+  
+  /* Particle Canvas */
+  .particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    z-index: 2;
+    max-width: 700px;
+    color: #fff;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Dynamic Typing Animation */
+  .dynamic-text {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(20) 1 forwards, blink 1s step-end infinite;
+  }
+  
+  .hero-subheading {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* CTA with Modern Glow Effect */
+  .cta-button {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px #ffa500, 0 0 20px #ffa500;
+  }
+  
+  /* Typing Keyframes */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-right: 2px solid #fff;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dynamic-text {
+      font-size: 2.2rem;
+    }
+  
+    .hero-subheading {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+/* General Reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Section Styling */
+  .featured-news {
+    padding: 60px 20px;
+    text-align: center;
+    background: #1e1e1e;
+    color: #fff;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffa500;
+  }
+  
+  /* News Container */
+  .news-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* News Cards */
+  .news-card {
+    background: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 320px;
+    flex: 0 1 calc(33.333% - 20px);
+  }
+  
+  .news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(255, 165, 0, 0.6);
+  }
+  
+  /* News Image */
+  .news-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* News Content */
+  .news-content {
+    padding: 15px;
+    color: #fff;
+  }
+  
+  .news-content h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+  }
+  
+  .news-content p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+  }
+  
+  /* Button with Micro-hover Effects */
+  .news-button {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .news-button:hover {
+    transform: scale(1.1);
+    background-color: #ff9d00;
+  }
+  
+  /* Responsive Behavior */
+  @media (max-width: 768px) {
+    .news-card {
+      flex: 0 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .news-card {
+      flex: 0 1 100%;
+    }
+  }
+  
+  /* Animate news on scroll */
+  @keyframes fadeIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .news-card:nth-child(1) {
+    animation: fadeIn 0.6s ease-out forwards;
+    animation-delay: 0.1s;
+  }
+  
+  .news-card:nth-child(2) {
+    animation: fadeIn 0.6s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .news-card:nth-child(3) {
+    animation: fadeIn 0.6s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Section Title */
+  .upcoming-events {
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    background: #252525;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #ffa500;
+    margin-bottom: 30px;
+  }
+  
+  /* Events Container */
+  .events-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  /* Event Card */
+  .event-card {
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 320px;
+    flex: 0 1 calc(33.333% - 20px);
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 165, 0, 0.6);
+  }
+  
+  /* Event Image */
+  .event-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Event Details */
+  .event-details {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .event-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  
+  .event-details p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+  }
+  
+  /* Event Button */
+  .event-button {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .event-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.8);
+  }
+  
+  /* Responsive Behavior */
+  @media (max-width: 768px) {
+    .event-card {
+      flex: 0 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .event-card {
+      flex: 0 1 100%;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Community Section Title */
+  .community-section {
+    padding: 60px 20px;
+    background: #252525;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #ffa500;
+    margin-bottom: 20px;
+  }
+  
+  /* Forum Container */
+  .forum-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Forum Cards */
+  .forum-card {
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px;
+    flex: 0 1 calc(33.333% - 20px);
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .forum-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 165, 0, 0.7);
+  }
+  
+  /* Forum Image */
+  .forum-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Forum Info Section */
+  .forum-info {
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .forum-info h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .forum-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 5px 0 15px;
+  }
+  
+  /* Buttons */
+  .forum-button {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .forum-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.7);
+  }
+  
+  /* Responsive Behavior */
+  @media (max-width: 768px) {
+    .forum-card {
+      flex: 0 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .forum-card {
+      flex: 0 1 100%;
+    }
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .forum-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(0); /* Ensures GPU acceleration for smooth scrolling */
+    will-change: transform; /* Hint for optimization */
+  }
+  /* Section Title */
+.featured-games {
+    padding: 60px 20px;
+    text-align: center;
+    background: #252525;
+    color: #fff;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #ffa500;
+    margin-bottom: 20px;
+  }
+  
+  /* Games Carousel */
+  .games-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+  }
+  
+  .game-card {
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #333;
+    flex: 0 0 auto;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 165, 0, 0.7);
+  }
+  
+  /* Game Image */
+  .game-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Game Info Section */
+  .game-info {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .game-info h3 {
+    font-size: 1.1rem;
+    margin: 8px 0;
+  }
+  
+  .game-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+  }
+  
+  /* Game Button */
+  .game-button {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .game-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.7);
+  }
+      
